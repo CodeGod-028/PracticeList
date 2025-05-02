@@ -1,10 +1,9 @@
 class AreaofTriangle{
     public static void main(String[] args) {
       Result r=new Result();
-//      Scanner sc = new Scanner(System.in);
+        r.display();
         r.method1(5);
         r.method2(5,8);
-        r.display();
     }
 }
 class Area{
