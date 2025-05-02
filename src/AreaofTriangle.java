@@ -1,11 +1,24 @@
-import java.util.*;
-public class AreaofTriangle {
+class AreaofTriangle{
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the side of Triangle");
-        int s=sc.nextInt();
-        double area= (1.73*Math.pow(s,2))/4;
-        System.out.println("Area of Triangle="+area);
-
+      Result r=new Result();
+//      Scanner sc = new Scanner(System.in);
+        r.method1(5);
+        r.method2(5,8);
+        r.display();
+    }
+}
+class Area{
+    void method1(int s){
+        double area1=((1.73*s*s)/4);
+        System.out.println("Area1="+area1);
+    }
+    void method2(double b,double h){
+        double area2= ((b*h)/2);
+        System.out.println("Area2="+area2);
+    }
+}
+class Result extends Area{
+    void display(){
+        System.out.println("Area of Triangle");
     }
 }
